@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
- # get 'ayuda/index'
 
- # get 'home/index'
+
+  get 'home/index'
+  
+  get 'practica_variables/index'
+
+  get 'practica_ruby/index'
+
+  get 'ayuda/index'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -10,8 +17,8 @@ Rails.application.routes.draw do
   root 'home#index'
 
   # Example of regular route:
-   get 'home/parametro/:id' => 'home#parametro'
-   get 'ayuda/pagina/:id' => 'ayuda#pagina'
+  # get 'home/parametro/:id' => 'home#parametro'
+  # get 'ayuda/pagina/:id' => 'ayuda#pagina'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
