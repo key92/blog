@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
 
+  get 'practica_render/index'
+
+  resources :seguridad_usuarios
   get 'home/index'
   
   get 'practica_variables/index'
@@ -17,8 +20,8 @@ Rails.application.routes.draw do
   root 'home#index'
 
   # Example of regular route:
-  # get 'home/parametro/:id' => 'home#parametro'
-  # get 'ayuda/pagina/:id' => 'ayuda#pagina'
+   get 'home/parametro/:id' => 'home#parametro'
+   get 'ayuda/pagina/:id' => 'ayuda#pagina'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
